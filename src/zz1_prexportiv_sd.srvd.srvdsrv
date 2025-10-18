@@ -1,0 +1,4 @@
+@EndUserText.label: '匯出供應商發票 Service definition'
+define service ZZ1_PREXPORTIV_SD {
+  expose ZZ1_PV_PREXPORTIV;
+}

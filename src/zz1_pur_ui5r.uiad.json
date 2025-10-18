@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "請款單明細列印_員工",
+    "originalLanguage": "zh-Hant",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "請款單明細列印_員工"
+  },
+  "ui5AppDetails": {
+    "appId": "zz1purchase"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D1420112602A6F86457C7E502D3568484F1D1739_TM",
+    "semanticObject": "zz1_purchase",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D1420112602A6F86457C7E502D3568484F1D1739_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "請款單明細列印_員工",
+        "subtitle": "請款單明細列印_員工"
+      }
+    }
+  ]
+}

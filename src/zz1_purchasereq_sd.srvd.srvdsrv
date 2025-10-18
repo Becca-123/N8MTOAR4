@@ -1,0 +1,4 @@
+@EndUserText.label: '請款單列印 Service Definition'
+define service ZZ1_PURCHASEREQ_SD {
+  expose ZZ1_PV_PURCHASEREQ;
+}

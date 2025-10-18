@@ -1,0 +1,147 @@
+managed implementation in class zz1_cl_prexportiv_d unique;
+strict ( 2 );
+with draft;
+define behavior for ZZ1_I_PREXPORTIV_D//alias <alias_name>
+lock master total etag iv_uuid
+persistent table zz1_prexportiv
+draft table zz1_prexportiv_d
+authorization master ( global )
+//etag master <field_name>
+{
+  field ( numbering : managed, readonly ) iv_uuid;
+  //  field ( mandatory : create ) companycode2;//xblnr, billing_date;
+
+  create;
+  update;
+  delete;
+  determination create_iv on save { create; }
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  mapping for zz1_prexportiv_d
+    {
+      iv_uuid                        = iv_uuid;
+      id                             = id;
+      companycode2                   = companycode2;
+      supplierinvoicetransactiontype = supplierinvoicetransactiontype;
+      invoicingparty                 = invoicingparty;
+      supplierinvoiceidbyinvcgparty  = supplierinvoiceidbyinvcgparty;
+      documentdate                   = documentdate;
+      postingdate                    = postingdate;
+      accountingdocumenttype         = accountingdocumenttype;
+      accountingdocumentheadertext   = accountingdocumentheadertext;
+      documentcurrency               = documentcurrency;
+      invoicegrossamount             = invoicegrossamount;
+      businessplace                  = businessplace;
+      paymentblockingreason          = paymentblockingreason;
+      duecalculationbasedate         = duecalculationbasedate;
+      manualcashdiscount             = manualcashdiscount;
+      paymentmethod                  = paymentmethod;
+      paymentmethodsupplement        = paymentmethodsupplement;
+      paymentreference               = paymentreference;
+      invoicereference               = invoicereference;
+      invoicereferencefiscalyear     = invoicereferencefiscalyear;
+      paymentterms                   = paymentterms;
+      cashdiscount1days              = cashdiscount1days;
+      cashdiscount1percent           = cashdiscount1percent;
+      cashdiscount2days              = cashdiscount2days;
+      cashdiscount2percent           = cashdiscount2percent;
+      netpaymentdays                 = netpaymentdays;
+      fixedcashdiscount              = fixedcashdiscount;
+      unplanneddeliverycost          = unplanneddeliverycost;
+      unplanneddeliverycosttaxcode   = unplanneddeliverycosttaxcode;
+      unplnddelivcosttaxjurisdiction = unplnddelivcosttaxjurisdiction;
+      referencedocumentcategory      = referencedocumentcategory;
+      assignmentreference2           = assignmentreference2;
+      supplierpostinglineitemtext    = supplierpostinglineitemtext;
+      businesssectioncode            = businesssectioncode;
+      paytslipwthrefsubscriber       = paytslipwthrefsubscriber;
+      paytslipwthrefcheckdigit       = paytslipwthrefcheckdigit;
+      paytslipwthrefreference        = paytslipwthrefreference;
+      businessarea2                  = businessarea2;
+      invoicereceiptdate             = invoicereceiptdate;
+      deliveryofgoodsreportingcntry  = deliveryofgoodsreportingcntry;
+      iseutriangulardeal             = iseutriangulardeal;
+      taxdeterminationdate           = taxdeterminationdate;
+      housebank                      = housebank;
+      housebankaccount               = housebankaccount;
+      unplnddeliverycosttaxcountry   = unplnddeliverycosttaxcountry;
+      jrnlentrycntryspecificref1     = jrnlentrycntryspecificref1;
+      jrnlentrycntryspecificdate1    = jrnlentrycntryspecificdate1;
+      bpbankaccountinternalid        = bpbankaccountinternalid;
+      taxreportingdate               = taxreportingdate;
+      taxfulfillmentdate             = taxfulfillmentdate;
+      jrnlentrycntryspecificbp1      = jrnlentrycntryspecificbp1;
+      jrnlentrycntryspecificbp2      = jrnlentrycntryspecificbp2;
+      jrnlentrycntryspecificdate2    = jrnlentrycntryspecificdate2;
+      jrnlentrycntryspecificdate3    = jrnlentrycntryspecificdate3;
+      jrnlentrycntryspecificdate4    = jrnlentrycntryspecificdate4;
+      jrnlentrycntryspecificdate5    = jrnlentrycntryspecificdate5;
+      jrnlentrycntryspecificref2     = jrnlentrycntryspecificref2;
+      jrnlentrycntryspecificref3     = jrnlentrycntryspecificref3;
+      jrnlentrycntryspecificref4     = jrnlentrycntryspecificref4;
+      jrnlentrycntryspecificref5     = jrnlentrycntryspecificref5;
+      iban                           = iban;
+      onetimeacctcntryspecificref1   = onetimeacctcntryspecificref1;
+      paymentreason                  = paymentreason;
+      numberofpages                  = numberofpages;
+      supplyingcountry1              = supplyingcountry1;
+      statecentralbankpaymentreason1 = statecentralbankpaymentreason1;
+      invoicingpartyaccount          = invoicingpartyaccount;
+      supplierinvoiceorigin          = supplierinvoiceorigin;
+      businessnetworkorigin          = businessnetworkorigin;
+      supplierinvoiceuploadfileuuid  = supplierinvoiceuploadfileuuid;
+      supplierinvoiceuploadorigin    = supplierinvoiceuploadorigin;
+      companycode                    = companycode;
+      glaccount                      = glaccount;
+      supplierinvoiceitemtext        = supplierinvoiceitemtext;
+      debitcreditcode                = debitcreditcode;
+      supplierinvoiceitemamount      = supplierinvoiceitemamount;
+      taxcode                        = taxcode;
+      taxjurisdiction                = taxjurisdiction;
+      assignmentreference            = assignmentreference;
+      costcenter                     = costcenter;
+      profitcenter                   = profitcenter;
+      internalorder                  = internalorder;
+      wbselement                     = wbselement;
+      businessarea                   = businessarea;
+      businessprocess                = businessprocess;
+      controllingarea                = controllingarea;
+      costctractivitytype            = costctractivitytype;
+      costobject                     = costobject;
+      functionalarea                 = functionalarea;
+      isnotcashdiscountliable        = isnotcashdiscountliable;
+      personnelnumber                = personnelnumber;
+      salesorder                     = salesorder;
+      salesorderitem                 = salesorderitem;
+      projectnetwork                 = projectnetwork;
+      networkactivity                = networkactivity;
+      workitem                       = workitem;
+      commitmentitem                 = commitmentitem;
+      fundsmanagementcenter          = fundsmanagementcenter;
+      taxbaseamountintranscrcy       = taxbaseamountintranscrcy;
+      funds                          = funds;
+      //  grant
+      donate                         = donate;
+      quantityunit                   = quantityunit;
+      quantity                       = quantity;
+      partnerbusinessarea            = partnerbusinessarea;
+      servicedocumenttype            = servicedocumenttype;
+      servicedocument                = servicedocument;
+      servicedocumentitem            = servicedocumentitem;
+      taxcountry                     = taxcountry;
+      financialtransactiontype       = financialtransactiontype;
+      budgetperiod                   = budgetperiod;
+      earmarkedfundsdocument         = earmarkedfundsdocument;
+      earmarkedfundsdocumentitem     = earmarkedfundsdocumentitem;
+      emrkdfndsitmiscompleted        = emrkdfndsitmiscompleted;
+      jointventurerecoverycode       = jointventurerecoverycode;
+      customer                       = customer;
+      customername                   = customername;
+      purchaserequisition            = purchaserequisition;
+      purchaserequisitionitem        = purchaserequisitionitem;
+      msg                            = msg;
+    }
+}

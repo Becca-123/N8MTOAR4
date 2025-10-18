@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "請購單匯出供應商發票",
+    "originalLanguage": "zh-Hant",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "請購單匯出供應商發票"
+  },
+  "ui5AppDetails": {
+    "appId": "zz1prexportiv"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_762975F84BF853CBA7DB16957C5AC7FD8D34B6B6_TM",
+    "semanticObject": "zz1_prexportiv",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_762975F84BF853CBA7DB16957C5AC7FD8D34B6B6_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "請購單匯出供應商發票",
+        "subtitle": "請購單匯出供應商發票"
+      }
+    }
+  ]
+}

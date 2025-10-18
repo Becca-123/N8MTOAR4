@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "zh-Hant",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "請購單匯入供應商發票_宏燁"
+  },
+  "ui5AppDetails": {
+    "appId": "zz1prexportivd"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_A8E5B274E17F74C9381AB889610518BD33274C62_TM",
+    "semanticObject": "zz1_prexportiv_d",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_A8E5B274E17F74C9381AB889610518BD33274C62_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "請購單匯入供應商發票_宏燁",
+        "subtitle": "請購單匯入供應商發票_宏燁"
+      }
+    }
+  ]
+}
