@@ -1,0 +1,8 @@
+projection;
+strict ( 2 );
+
+define behavior for ZZ1_PV_POHDMES //alias <alias_name>
+{
+  use action SeandValue;
+  use action MaterialConfirmation;
+}
